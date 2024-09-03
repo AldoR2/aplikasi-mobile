@@ -46,6 +46,12 @@
             android:text="This is the About section where you can add information about your app."
             android:textSize="14sp"
             android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </LinearLayout>
 
     <!-- Button -->
