@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="45dp"
+        android:text="Mobile"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="90dp"
+        android:textAlignment="textEnd"
+        android:text="BCA"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="45sp"
+        android:textStyle="bold|italic" />
+
+    <GridLayout
+        android:id="@+id/card_view"
+        android:layout_width="387dp"
+        android:layout_height="283dp"
+        android:layout_below="@id/top_view"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="80dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="@drawable/gridoutline"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="@drawable/gridoutline"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@drawable/radius"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="@drawable/gridoutline"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:background="@drawable/radius" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="m-BCA"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="BRIMO"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="MANDIRI"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/bca" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@drawable/bank_bri" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:src="@drawable/livinn" />
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Rekening Baru"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="430dp"
+        android:textSize="23sp"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ganti kode akses"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="490dp"
+        android:textSize="23sp"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flazz"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="550dp"
+        android:textSize="23sp"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Selamat Datang di BCA Mobile"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</RelativeLayout>
