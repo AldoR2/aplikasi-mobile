@@ -17,6 +17,8 @@ import com.example.mobile1.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.GridLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
